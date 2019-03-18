@@ -1,0 +1,33 @@
+h1
+{
+    width:50%;
+    margin-left: 25%;
+    color: cornflowerblue;
+    background-color: darkgray;
+}
+h2{
+    color:rebeccapurple;
+}
+body{
+    text-align: center;
+    width:600px;
+    height:500px;
+}
+table{
+    margin-left: 30%;
+}
+tr td{
+    padding:10px 10px;;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+input{
+    padding : 10px 5px;
+}
+.abc
+{
+    margin-top: 10px;
+    padding:5px 10px;
+}
+select{
+    padding:5px 10px;
+}

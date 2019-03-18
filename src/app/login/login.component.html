@@ -1,0 +1,45 @@
+<h1>
+  Employee Management System
+</h1>
+<body *ngIf=disp1 background="./assets/Image/image1.jpg">
+<h2>
+  Login
+</h2>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+    <table>
+      <tr>
+        <td>Userid: </td>
+        <td><input type="text" placeholder="username" formControlName="userid"></td>
+      </tr>
+      <tr>
+        <td>Password: </td>
+        <td><input type="password" placeholder="Password" formControlName="pass"></td>
+      </tr>
+      <tr>
+        <td>Designation:</td>
+        <td>
+            <select  (change)="selectChangeHandler($event)" >
+                <option disabled value="null" >Choose Designation</option>
+                <option value="Admin">Admin</option>
+                <option value="Employee">Employee</option>
+                <option value="Manager">Manager</option>
+              </select>
+        </td>
+        
+        
+      </tr>
+      </table>
+    
+    <input class="abc" type="submit" value="Login" [disabled]="!form.valid">
+  </form>
+</body>
+<p *ngIf=admin>
+  <admin></admin>
+</p>
+<p *ngIf=empb>
+  <employee></employee>
+</p>
+<p *ngIf=manb>
+  <manager></manager>
+</p>

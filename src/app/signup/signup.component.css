@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+}
+fieldset{
+    margin-left: 30%;
+    width:50%;
+}
+.abc
+{
+    padding: 8px 10px;
+    margin-left: 130px;
+}
+.xyz
+{
+    padding:5px 1px;
+    margin-left: 10px;
+}
+td{
+    padding:10px 5px;
+}
+td input
+{
+    padding:10px 2px;
+    margin-left: 10px;
+}

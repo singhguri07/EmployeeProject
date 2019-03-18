@@ -1,0 +1,21 @@
+{
+    "users":
+    [
+        {
+            "id":"admin",
+            "pass":"admin",
+            "type":"Admin"
+
+        },
+        {
+            "id":"man",
+            "pass":"man",
+            "type":"Manager"
+        },
+        {
+            "id":"emp",
+            "pass":"emp",
+            "type":"Employee"
+        }
+    ]
+}

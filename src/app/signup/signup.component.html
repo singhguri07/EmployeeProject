@@ -1,0 +1,50 @@
+<h1>
+  Register new User
+</h1>
+<form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+  <fieldset>
+    <table>
+      <tr>
+        <td>Name</td>
+        <td><input type="text" placeholder="Full name" formControlName="name"></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td><input type="email" placeholder="xyz@gmail.com" formControlName="email"></td>
+      </tr>
+
+      <tr>
+          <td>Mobile num:</td>
+          <td><input type="text" placeholder="+91 xxxxxxxxxx" formControlName="mobile"></td>
+        </tr> 
+
+      <tr>
+          <td>User id:</td>
+          <td><input type="text" placeholder="User-id" formControlName="userid"></td>
+      </tr>
+
+      <tr>
+          <td>Password</td>
+          <td><input type="password" placeholder="Password" formControlName="pass"></td>
+      </tr>
+
+      <tr>
+      
+        <td>
+          Designation
+        </td>
+        <td>
+          <select class="xyz">
+            <option>Choose</option>
+            <option>Admin</option>
+            <option>Employee</option>
+            <option>Manager</option>
+          </select>
+        </td>
+      </tr>
+
+    </table>
+    <input class="abc" type="submit" value="Create" [disabled]="!form.valid">
+  </fieldset>
+
+</form>

@@ -1,0 +1,24 @@
+<div></div>
+<body *ngIf=disp1 background="./assets/Image/image2.jpg">
+  <h2>
+    Admin
+  </h2>
+  <br>
+  <ul>
+    <li>
+     <a routerLink="signup" (click)="toggle1()">Add user</a>
+    </li>
+    <li>
+      <a routerLink="update">Update user</a>
+    </li>
+    <li>
+      <a routerLink ="" (click)="toggle()" >Log out</a>
+    </li>
+  </ul>
+  </body>
+  <div *ngIf=(disp2)>
+    <login></login>
+  </div>
+  <p *ngIf=disp3>
+    <router-outlet></router-outlet>
+  </p>
