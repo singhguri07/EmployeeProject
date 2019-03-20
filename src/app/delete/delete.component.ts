@@ -17,5 +17,8 @@ export class DeleteComponent implements OnInit {
       }
     );
   }
+  onSubmit(myform)
+  {
 
+  }
 }
