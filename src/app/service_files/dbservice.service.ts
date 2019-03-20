@@ -19,4 +19,14 @@ export class DbserviceService {
     return this.http.get(this.url+id)
     .map((response:any)=>response)
   }
+  getAllUsers()
+  {
+    return this.http.get(this.url)
+    .map((response:any)=>response)
+  }
+  postUser(user)
+  {
+    return this.http.post(this.url,user)
+    .map((response:any)=>response)
+  }
 }

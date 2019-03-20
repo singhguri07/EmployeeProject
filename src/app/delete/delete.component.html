@@ -1,0 +1,23 @@
+<br>
+<h1>
+  Deleting a Record
+</h1>
+<form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+<table>
+  <tr>
+   <th>
+      Enter userid:
+    </th>
+    <td>
+      <input type="text" formControlName="userid">
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <input type="button" value="Delete" [disabled]="!form.valid">
+    </td>
+  </tr>
+  
+</table>
+
+</form>

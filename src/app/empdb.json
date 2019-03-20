@@ -1,21 +1,102 @@
 {
-    "users":
-    [
-        {
-            "id":"admin",
-            "pass":"admin",
-            "type":"Admin"
-
-        },
-        {
-            "id":"man",
-            "pass":"man",
-            "type":"Manager"
-        },
-        {
-            "id":"emp",
-            "pass":"emp",
-            "type":"Employee"
-        }
-    ]
+  "users": [
+    {
+      "id": "admin",
+      "pass": "admin",
+      "type": "Admin",
+      "name": "GUrvinder",
+      "email": "xyz@com.com",
+      "mob": "+9195689",
+      "desig": "employee"
+    },
+    {
+      "id": "man",
+      "pass": "man",
+      "type": "Manager",
+      "name": "GUrvinder",
+      "email": "xyz@com.com",
+      "mob": "+9195689",
+      "desig": "employee"
+    },
+    {
+      "id": "emp",
+      "pass": "emp",
+      "type": "Employee",
+      "name": "GUrvinder",
+      "email": "xyz@com.com",
+      "mob": "+9195689",
+      "desig": "employee"
+    },
+    {
+      "id": "asd",
+      "pass": "das",
+      "name": "dsa",
+      "email": "asd",
+      "mob": "asd"
+    },
+    {
+      "id": "asda",
+      "pass": "das",
+      "name": "dsa",
+      "email": "asd",
+      "mob": "asd"
+    },
+    {
+      "id": "OF33Z2I",
+      "pass": "",
+      "name": "",
+      "email": "",
+      "mob": ""
+    },
+    {
+      "id": "jh",
+      "pass": "j",
+      "name": "gur ",
+      "email": "jh",
+      "mob": "jh"
+    },
+    {
+      "id": "dsa",
+      "pass": "adsd",
+      "name": "asd",
+      "email": "sad",
+      "mob": "asd"
+    },
+    {
+      "id": "dsaa",
+      "type": "Admin",
+      "pass": "sd",
+      "name": "asd",
+      "email": "ads",
+      "mob": "ads",
+      "desig": "Admin"
+    },
+    {
+      "id": "dsf",
+      "type": "Admin",
+      "pass": "sdf",
+      "name": "dfs",
+      "email": "fds",
+      "mob": "dsf",
+      "desig": "Admin"
+    },
+    {
+      "id": "sadads",
+      "type": "Admin",
+      "pass": "sda",
+      "name": "dsa",
+      "email": "adsasd",
+      "mob": "dsasda",
+      "desig": "Admin"
+    },
+    {
+      "id": "768940",
+      "type": "Admin",
+      "pass": "11",
+      "name": "Manish",
+      "email": "mjthakur413@gmail.com",
+      "mob": "8628829553",
+      "desig": "Admin"
+    }
+  ]
 }

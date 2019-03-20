@@ -9,16 +9,22 @@
      <a routerLink="signup" (click)="toggle1()">Add user</a>
     </li>
     <li>
-      <a routerLink="update">Update user</a>
-    </li>
+        <a routerLink="update" (click)="display()">Update user</a>
+      </li><li>
+          <a routerLink="delete" (click)="display()">Delete user</a>
+        </li>
+      <li>
+        <a routerLink="display" (click)="display()">Display users</a>
+      </li>
     <li>
       <a routerLink ="" (click)="toggle()" >Log out</a>
     </li>
   </ul>
   </body>
+  <p *ngIf=disp3>
+      <router-outlet> </router-outlet>
+    </p>
   <div *ngIf=(disp2)>
     <login></login>
   </div>
-  <p *ngIf=disp3>
-    <router-outlet></router-outlet>
-  </p>
+  

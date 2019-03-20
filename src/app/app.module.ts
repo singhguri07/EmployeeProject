@@ -14,6 +14,9 @@ import { EmployeepanelComponent } from './employeepanel/employeepanel.component'
 import { DbserviceService } from './service_files/dbservice.service';
 import { Http, HttpModule } from '@angular/http';
 import { SignupComponent } from './signup/signup.component';
+import { DisplayComponent } from './display/display.component';
+import { DeleteComponent } from './delete/delete.component';
+import { UpdateComponent } from './update/update.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { SignupComponent } from './signup/signup.component';
     AdminpanelComponent,
     ManagerpanelComponent,
     EmployeepanelComponent,
-    SignupComponent
+    SignupComponent,
+    DisplayComponent,
+    DeleteComponent,
+    UpdateComponent
   ],
   imports: [
     BrowserModule,

@@ -30,8 +30,9 @@
         
       </tr>
       </table>
-    
+      <p *ngIf=res>User not found</p>
     <input class="abc" type="submit" value="Login" [disabled]="!form.valid">
+   
   </form>
 </body>
 <p *ngIf=admin>

@@ -1,7 +1,8 @@
-<h1>
-  Register new User
-</h1>
-<form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+
+<form *ngIf=disp1 [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+    <h1>
+        Register new User
+      </h1>
   <fieldset>
     <table>
       <tr>
@@ -34,11 +35,11 @@
           Designation
         </td>
         <td>
-          <select class="xyz">
-            <option>Choose</option>
-            <option>Admin</option>
-            <option>Employee</option>
-            <option>Manager</option>
+          <select class="xyz" (change)="selectChangeHandler($event)">
+            <option disabled value="empty">Choose</option>
+            <option value="Admin">Admin</option>
+            <option value="Employee">Employee</option>
+            <option value="Manager">Manager</option>
           </select>
         </td>
       </tr>
@@ -48,3 +49,6 @@
   </fieldset>
 
 </form>
+<p *ngIf=disp2>
+  <admin></admin>
+</p>

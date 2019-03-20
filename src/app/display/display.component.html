@@ -1,0 +1,29 @@
+<button type="button" (click)="displayAll()">Display All</button>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Type</th>
+    <th>Password</th>
+    <th> Name</th>
+    <th>Email</th>
+    <th>Mobile</th>
+    <th>Designation</th>
+  </tr>
+</table>
+
+ <table><div *ngFor="let u of user">
+    <tr>
+      <td>{{u.id}}      </td> 
+      <td>          {{u.type}}    </td>
+       <td>         {{u.pass}}    </td>
+       <td>         {{u.name}}    </td> 
+       <td>         {{u.email}}   </td>
+       <td>         {{u.mob}}     </td>
+       <td>         {{u.desig}}   </td>
+    </tr>
+  </div>
+  </table>
+   
+
+

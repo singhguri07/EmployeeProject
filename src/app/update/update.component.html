@@ -1,0 +1,77 @@
+<h1>
+  Updating User
+</h1>
+<form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+  <table>
+    <tr>
+      <th>Enter user id to update details:</th>
+      <td>
+        <input type="text" placeholder="userid" formControlName="userid">
+      </td>
+    </tr>
+  </table>
+  <input class="a" type="submit" value="Check Details" [disabled]="!form.valid">
+</form>
+<div *ngIf=disp2>
+  <h3>User Details</h3>
+  <table>
+    <tr>
+      <td>Name:</td>
+      <td>{{user.name}}</td>
+    </tr>
+    <tr>
+      <td> Email:   </td>
+      <td>{{user.email}}</td>
+    </tr>
+    <tr>
+      <td>Designation:  </td>
+      <td>{{user.type}}</td>
+    </tr>
+    <tr>
+      <td>Password: </td>
+      <td>***********</td>
+    </tr>
+    <tr>
+      <td>Mobile:</td>
+      <td>{{user.mob}}</td>
+    </tr>
+    <br><br>
+    <tr>
+      <td>Select Option: &nbsp;&nbsp;</td>
+      <td>
+        <select (change)="selectedHandler($event)">
+          <option disabled>Choose</option>
+          <option>Name</option>
+          <option>Email</option>
+          <option>Designation</option>
+          <option>Password</option>
+          <option>Mobile</option>
+        </select>
+      </td>
+      <td>
+        <button type="button"(click)="modify()">Submit</button>
+      </td>
+    </tr>
+  </table>
+</div>
+<div *ngIf="mod">
+  <table>
+    <tr>
+      <td>Userid: </td>
+      <td><input type="text" placeholder="userid"></td>
+    </tr>
+    <tr>
+      <td>Current: {{selectedOption}}</td>
+      <td><input type="text" placeholder="Current {{selectedOption}}"></td>
+    </tr>
+    <tr>
+      <td>New {{selectedOption}}</td>
+      <td><input type="text" placeholder="New {{selectedOption}}"></td>
+    </tr>
+    <tr>
+      <td>Confirm {{selectedOption}}:</td>
+      <td><input type="text" placeholder="Confirm {{selectedOption}}"></td>
+    </tr>
+  </table>
+  <input type="button" value="Change" (click)="changing()">
+</div>
